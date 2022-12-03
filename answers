@@ -185,76 +185,126 @@ A) t=()
   t=("eshwar")--> this can be done
 
 Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
-A)
+A) yes it can be done using '+
+   t=(1,2)
+   t1=(3,4)
+   res=t+t1
+   print(res)
 
 Q44. Take a tuple as an input and print the count of elements in it.
+A) t=tuple(input("Enter the elements:").split())
+   print(len(t))
 
 Q45. What are sets in Python?
+A) Sets are used to store multiple items in a single variable.
 
 Q46. How can you create a set?
+A)s={elements}
 
 Q47. Create a set and add "iNeuron" in your set.
+A)s={'iNeuron'}
 
 Q48. Try to add multiple values using add() function.
+A) we cant add multiple values using ad() in set
 
 Q49. How is update() different from add()?
+A) update() takes itearable as argument were as add() takes a single element as argument
 
 Q50. What is clear() in sets?
+A)removes all the elements in set
 
 Q51. What is frozen set?
+A)they are immutable sets
 
 Q52. How is frozen set different from set?
+A)set are mutable and frozen sets are immutable
 
 Q53. What is union() in sets? Explain via code.
+A) it unions the elements in two sets same as in math
 
 Q54. What is intersection() in sets? Explain via code.
+A) common elements of two sets
 
 Q55. What is dictionary ibn Python?
+A) dictionary is mapping collection in python to store elements in the form of key-value
 
 Q56. How is dictionary different from all other data structures.
+A) dictionary has key-value where as others dont
 
 Q57. How can we delare a dictionary in Python?
+A)d={key-value}
 
 Q58. What will the output of the following?
-
+A)<class,dict>
 var = {}
 print(type(var))
+
 Q59. How can we add an element in a dictionary?
+A) dic={}
+  dic['eshwar']='student
+  print(dic)
 
 Q60. Create a dictionary and access all the values in that dictionary.
+A) dic={'10th':'bhashyam','12':'narayana','btech':'vbit'}
+   keylist=dic.keys();
+   for i in keylist:
+        print(i,dic[i])
 
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
+A)  dic={'exmpl':{number1:'1st',number2:'2nd'},'edu':{10:'bhashyam'}}
+    outerkeys=dic.keys()
+    for i in innerkeys:
+        innerkeys=dic[i].keys()
+        for j in innerkeys:
+            print(i+" "+dic[i][j])
+        
 
 Q62. What is the use of get() function?
+A) get(key,value)-->it returns the val of key in dict if key is not found it return the value in get()
 
 Q63. What is the use of items() function?
+A)It is used to return the list with all dictionary keys with values
 
 Q64. What is the use of pop() function?
+A) used to remove the item at specific index
 
 Q65. What is the use of popitems() function?
+A)removes last element from the dict
 
 Q66. What is the use of keys() function?
+A) returns list of keys in dict
 
 Q67. What is the use of values() function?
-
+A)return list of values in dictionary
+ 
 Q68. What are loops in Python?
+A) looping means repeating the same task again and again until the conditon is satisfied
 
 Q69. How many type of loop are there in Python?
+A) 3 types in pythom 
 
 Q70. What is the difference between for and while loops?
+A)The for loop is used when we already know the number of iterations. while is used When we need to end the loop on a condition other than the number of times
 
 Q71. What is the use of continue statement?
+A) it skips the code lines below it and continues the loop.
 
 Q72. What is the use of break statement?
+A)it breaks the loop (comes out of the loop)
 
 Q73. What is the use of pass statement?
+A)When we dont know what code to write then we simply use pass keyword
 
 Q74. What is the use of range() function?
+A) it returns a sequence of numbers in given range
+   range(start(optional): end: step(optional) )
 
 Q75. How can you loop over a dictionary?
+A) using for loop
 
 Coding problems
 Q76. Write a Python program to find the factorial of a given number.
+A)
 
 Q77. Write a Python program to calculate the simple interest. Formula to calculate simple interest is SI = (PRT)/100
 
