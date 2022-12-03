@@ -1,0 +1,110 @@
+Q1. Why do we call Python as a general purpose and high-level programming language?
+A)Since python is designed to be used for building software in a wide variety of application domains,and also it is 
+in human readable format it is called high- level programming language.
+
+Q2. Why is Python called a dynamically typed language?
+A)Since its type of the variable is determined during runtime not at compile time.
+
+Q3. List some pros and cons of Python programming language?
+A) pros---> general purpose language , easy to learn compared other languages, object-oreinted
+   cons---> slower than compiled languages like c++, high memory consuption 
+
+Q4. In what all domains can we use Python?
+A)it can be used in ML, AI , Data science, Web devolopment,Gaming and many more
+
+Q5. What are variable and how can we declare them?
+A)varibales are nothing name given to a address to access them .It has no command for declaring a variable. A variable is created the moment you first assign a value to it.
+
+Q6. How can we take an input from the user in Python?
+A)using input() function
+
+Q7. What is the default datatype of the value that has been taken as an input using input() function?
+A)String
+
+Q8. What is type casting?
+A)converting one data type to other.
+
+Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+A) yes it can be done with combination of split() method which uses a seperator(optional).
+
+Q10. What are keywords?
+A)Python keywords are special reserved words that have specific meanings and purposes and can't be used for anything but those specific purposes.
+
+Q11. Can we use keywords as a variable? Support your answer with reason.
+A)no keywords cant be used as variable because it has some meaning predefined and python doesnt know whether it is a keyword or
+variable if we use variable as keyword.
+
+Q12. What is indentation? What's the use of indentaion in Python?
+A)Indentation refers to the spaces at the beginning of a code line. Python uses indentation to indicate a block of code.
+
+Q13. How can we throw some output in Python?
+A)using print() 
+
+Q14. What are operators in Python?
+A)operators are special symbols that designate that some sort of computation should be performed. such as addition,sub,etc
+
+Q15. What is difference between / and // operators?
+A)/ is for floating div and // is for integer div
+
+Q16. Write a code that gives following as an output.
+A)a="iNeuron"*4
+  print(a)
+iNeuroniNeuroniNeuroniNeuron
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+A)num=input("Enter the number:")
+  if(num%2==0):
+      print("Even")
+  else:
+      print("Odd")
+
+Q18. What are boolean operator?
+A)Boolean Operators are simple words (AND, OR, NOT or AND NOT) and gives boolean as ouput after performing the operations.
+
+Q19. What will the output of the following?
+1 or 0---> 1
+
+0 and 0--->0
+
+True and False and True ---->False
+
+1 or 0 or 0--->1
+
+Q20. What are conditional statements in Python?
+A)it is used to handle conditions in your program.
+
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+A)they are decision making statements whether to go to if(condtion) if it evaluates to false then it goes to elif and so om=n..
+This are called nested if else statement.
+
+Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+A)age=input("Enter the age")
+   if(age>=18):
+     print("I Can Vote")
+   else :
+      print("I cant Vote")
+
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+A)lambda_even= lambda x:x%2==0
+  even=list(filter(lambda_even,numbers))
+  lambda_sum= lambda x,y:x+y
+   print(functools.reduce(lambda_sum,even))
+numbers = [12, 75, 150, 180, 145, 525, 50]
+
+Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+A) a,b,c=input("Enter three numbers:").split()
+   if(a>b and b>c):
+      print(a)
+   elif(b>a and b>c):
+     print(b)
+   else :
+    print(c)
+
+Q25. Write a program to display only those numbers from a list that satisfy the following conditions
+A) res=[]
+   for val in numbers:
+     if val>500:
+        break
+     elif val>150:
+        continue
+     elif val%5==0 :
+         res.append(val)
