@@ -461,7 +461,7 @@ Q96. Write a python program to print below pattern.
 A) for i in range(0,5):
       for j in range(0,i+1):
            print("*",end="")  
-      print("\n")
+      print()
 
 * 
 * * 
