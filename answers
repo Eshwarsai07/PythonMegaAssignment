@@ -459,9 +459,9 @@ Output : [('Geeks', 8), ('for', 24), ('Geeks', 30)]
 
 Q96. Write a python program to print below pattern.
 A) for i in range(0,5):
-      print("\n")
       for j in range(0,i+1):
-           print("*",end="")    
+           print("*",end="")  
+      print("\n")
 
 * 
 * * 
