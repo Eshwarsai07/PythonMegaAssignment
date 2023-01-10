@@ -1,0 +1,109 @@
+Q1. What is the purpose of Python's OOP?
+A)It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the programming.
+
+Q2. Where does an inheritance search look for an attribute?
+A)An inheritance search looks for an attribute first in the instance object, then in the class the instance was created from, then in all higher superclasses, progressing from left to right (by default)
+
+Q3. How do you distinguish between a class object and an instance object?
+A)Everything in Python is an object. Instance is an object that belongs to a class 
+
+Q4. What makes the first argument in a class’s method function special?
+A) Beacuse its a class object.
+
+Q5. What is the purpose of the init method?
+A) Its a constructor for a class mainly used to initialize the instance variables.
+
+Q6. What is the process for creating a class instance?
+A)call the class using class name and pass in whatever arguments its __init__ method accepts
+
+Q7. What is the process for creating a class?
+A)we can crate a clas in Python using the keyword 'class'.
+
+Q8. How would you define the superclasses of a class?
+A)A superclass is the class from which many subclasses can be created. The subclasses inherit the characteristics of a superclass. The superclass is also known as the parent class or base class
+
+Q9. What is the relationship between classes and modules?
+A)Modules are collections of methods and constants. They cannot generate instances. Classes may generate instances (objects), and have per-instance state (instance variables).
+
+Q10. How do you make instances and classes?
+A)To create instances of a class, you call the class using class name and pass in whatever arguments its __init__ method accepts. classes are created using class keyword
+
+Q11. Where and how should be class attributes created?
+A) Class attributes are the variables defined directly in the class that are shared by all objects of the class.
+
+Q12. Where and how are instance attributes created?
+A)Instance attributes are defined in the constructor. Defined directly inside a class. Defined inside a constructor using the self parameter
+
+Q13. What does the term "self" in a Python class mean?
+A)its a pointer to the object.
+
+Q14. How does a Python class handle operator overloading?
+A)The operator overloading in Python means provide extended meaning beyond their predefined operational meaning. 
+Such as, we use the "+" operator for adding two integers as well as joining two strings or merging two lists. 
+We can achieve this as the "+" operator is overloaded by the "int" class and "str" class.
+
+Q15. When do you consider allowing operator overloading of your classes?
+A)when we are making a new class that falls into an existing "Abstract Base Class"
+
+Q16. What is the most popular form of operator overloading?
+A) The '+' is the most popular form of operator overloading. we use the "+" operator for adding two integers as well as joining two strings or merging two lists.
+
+Q17. What are the two most important concepts to grasp in order to comprehend Python OOP code?
+A)Inheritance and polymorphism are fundamental concepts of object oriented programming.
+
+Q18. Describe three applications for exception processing.
+A)we Checked exception, Error,Runtime exception.
+
+Q19. What happens if you don't do something extra to treat an exception?
+A)the program gets altered with out executing completely
+
+Q20. What are your options for recovering from an exception in your script?
+A)We can  provide a generic except clause, which handles any exception
+
+Q21. Describe two methods for triggering exceptions in your script.
+A)using  TRY,RAISE.
+
+Q22. Identify two methods for specifying actions to be executed at termination time, regardless of
+whether or not an exception exists.
+A)We use finally to execute statements regardless of exception raise.
+
+Q23. What is the purpose of the try statement?
+A) It is used to throw the exception to catch block when an exception is raised.
+
+Q24. What are the two most popular try statement variations?
+A) try-catch-finally , try-except
+
+Q25. What is the purpose of the raise statement?
+A)it is used to raise an exception.
+
+Q26. What does the assert statement do, and what other statement is it like?
+A)The assert keyword is used when debugging code. The assert keyword lets you test if a condition in your code returns True, if not, the program will raise an AssertionError.
+
+Q27. What is the purpose of the with/as argument, and what other statement is it like?
+A)The with statement works with the open() function to open a file. 
+  Unlike open() where you have to close the file with the close() method, the with statement closes the file for you without you telling it to
+
+Q28. What are *args, **kwargs?
+A) *args is to give multiple arguments at a time and **kwargs is to give multiple key-value pairs as arguments at a time. 
+
+Q29. How can I pass optional or keyword parameters from one function to another?
+A) To pass optional or keyword parameters from one function to another, collect the arguments using the * and ** specifiers in the function’s parameter list.
+
+Q30. What are Lambda Functions?
+A)A lambda function is an anonymous function (i.e., defined without a name) that can take any number of arguments but, unlike normal functions, evaluates and returns only one expression
+
+Q31. Explain Inheritance in Python with an example?
+A) It is a mechanism that allows you to create a hierarchy of classes that share a set of properties and methods by deriving a class from another class.
+  class Children inherits class Parent.
+
+Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
+A) The version which is defined in A.
+
+Q33. Which methods/functions do we use to determine the type of instance and inheritance?
+A) isInstance() , isSubclass()
+
+Q34.Explain the use of the 'nonlocal' keyword in Python.
+A)The nonlocal keyword is used to work with variables inside nested functions, where the variable should not belong to the inner function.
+
+Q35. What is the global keyword?
+A)The global keyword is used to create global variables
